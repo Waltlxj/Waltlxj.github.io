@@ -1,8 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 function App() {
   return (
-    <h1> Hello from Walt!</h1>
+    <>
+    <div class="container">
+    <h1> Hello from Walt! </h1>
+    <div>
+      <p> Checking out bootstrap. </p>
+      <button>Button</button>
+    </div>
+    </div>
+    </>
   );
 }
 
