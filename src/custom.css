@@ -2,10 +2,14 @@
   max-width: 800px;
 }
 
+a {
+  transition: color 0.3s;
+}
 
 .header {
   margin-top: 6rem;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .value-prop {

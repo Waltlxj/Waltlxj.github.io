@@ -1,0 +1,12 @@
+.icon-list {
+    padding-top: 1rem;
+}
+
+a.icon {
+    margin-right: 1rem;
+    color: #444;
+}
+
+a.icon:hover {
+    color: rgb(120, 211, 120);
+}
