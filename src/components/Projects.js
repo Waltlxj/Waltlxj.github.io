@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
     React.useEffect(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scroll({ top: 0, behavior: 'smooth' });
       }, []);
     return (
         <div className='docs-section'>

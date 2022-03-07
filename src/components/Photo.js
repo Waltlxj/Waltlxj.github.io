@@ -5,7 +5,7 @@ const Photos = () => {
     React.useEffect(() => {
         setTimeout(() => {
             // console.log('hi')
-            window.scrollTo({ top: 350, behavior: 'smooth' });
+            window.scroll({ top: 350, behavior: 'smooth' });
         }, 500)
       }, []);
     return (

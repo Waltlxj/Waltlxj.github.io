@@ -3,7 +3,7 @@
   --text-primary: #222;
   --text-secondary: #333;
   --border: #eee;
-  --accent: purple;
+  --accent: #24b4e0;
 }
 
 [data-theme='dark'] {
@@ -11,7 +11,7 @@
   --text-primary: white;
   --text-secondary: #ccc;
   --border: #222;
-  --accent: darkred;
+  --accent: crimson;
 }
 
 html {
@@ -24,6 +24,10 @@ body {
 
 #root {
   height: inherit;
+}
+
+a:hover {
+  color: var(--accent);
 }
 
 .container {
@@ -165,7 +169,7 @@ body {
 
 
 .navbar {
-  display: none; 
+  /* display: none;  */
   transition: all 0.8s;
 }
 

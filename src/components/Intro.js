@@ -3,7 +3,7 @@ import './Intro.css'
 
 const Intro = () => {
     React.useEffect(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scroll({ top: 0, behavior: 'smooth' });
       }, []);
     return (
         <div className='docs-section'>
