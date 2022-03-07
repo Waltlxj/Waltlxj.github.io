@@ -2,6 +2,9 @@ import React from 'react'
 import './Intro.css'
 
 const Intro = () => {
+    React.useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, []);
     return (
         <div className='docs-section'>
             <h6 className='docs-header'>About me</h6>
