@@ -3,7 +3,7 @@
   --text-primary: #222;
   --text-secondary: #333;
   --border: #eee;
-  --accent: #24b4e0;
+  --accent: mediumseagreen;
 }
 
 [data-theme='dark'] {
@@ -11,7 +11,7 @@
   --text-primary: white;
   --text-secondary: #ccc;
   --border: #222;
-  --accent: crimson;
+  --accent: goldenrod;
 }
 
 html {
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  height: inherit;
+  height: 100%;
 }
 
 #root {
@@ -169,8 +169,7 @@ a:hover {
 
 
 .navbar {
-  /* display: none;  */
-  transition: all 0.8s;
+   display: flex;
 }
 
 /* Larger than phone */
