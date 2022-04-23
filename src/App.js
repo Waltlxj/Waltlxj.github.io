@@ -21,7 +21,7 @@ const Content = () => {
     <div className='page' data-theme={theme}>
     <div className='container'>
       <header className='header'>
-        <h2> Hello, I am Walt </h2>
+        <h2> Hello, I am Walt. </h2>
       </header>
       <nav className='navbar'>
           <ul className="navbar-list">

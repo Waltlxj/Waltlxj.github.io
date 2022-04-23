@@ -7,6 +7,9 @@ const Projects = () => {
     return (
         <div className='docs-section'>
             <h6 className='docs-header'>Programming Projects</h6>
+            <div className='icon-list'>
+			    <a className='icon' href="https://github.com/Waltlxj" target="blank"><i className='fa-brands fa-github fa-xl'></i></a>
+            </div>
         </div>
     )
 }
