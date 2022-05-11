@@ -34,6 +34,10 @@ a:hover {
   color: var(--accent);
 }
 
+li {
+  text-align: left;
+}
+
 .container {
   max-width: 700px;
 }
