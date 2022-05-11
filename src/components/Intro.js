@@ -37,11 +37,11 @@ const Intro = () => {
             </p>
                 
             <div className='icon-list'>
-                <a className='icon' href="https://www.linkedin.com/in/xiongju-walt-li-a12922173/" target="blank"><i className="fa-brands fa-linkedin fa-xl"></i></a>
-			    <a className='icon' href="https://github.com/Waltlxj" target="blank"><i className='fa-brands fa-github fa-xl'></i></a>
-			    <a className='icon' href="https://www.instagram.com/waltlxjpix" target="blank"><i className='fa-brands fa-instagram fa-xl'></i></a>
-                <a className='icon' href="https://www.flickr.com/photos/192637096@N03/" target="blank"><i className='fa-brands fa-flickr fa-xl'></i></a>
-			    <a className='icon' href="mailto:liw4@carleton.edu"><i className='fa-solid fa-envelope fa-xl'></i></a>
+                <a className='icon' href="https://www.linkedin.com/in/xiongju-walt-li-a12922173/" target="blank"><i className="fa-brands fa-linkedin fa-lg"></i></a>
+			    <a className='icon' href="https://github.com/Waltlxj" target="blank"><i className='fa-brands fa-github fa-lg'></i></a>
+			    <a className='icon' href="https://www.instagram.com/waltlxjpix" target="blank"><i className='fa-brands fa-instagram fa-lg'></i></a>
+                <a className='icon' href="https://www.flickr.com/photos/192637096@N03/" target="blank"><i className='fa-brands fa-flickr fa-lg'></i></a>
+			    <a className='icon' href="mailto:liw4@carleton.edu"><i className='fa-solid fa-envelope fa-lg'></i></a>
             </div>
         </div>
     )

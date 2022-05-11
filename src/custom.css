@@ -26,6 +26,10 @@ body {
   height: inherit;
 }
 
+a {
+  color: var(--text-secondary);
+}
+
 a:hover {
   color: var(--accent);
 }
@@ -172,6 +176,17 @@ a:hover {
    display: flex;
 }
 
+.navbar-list {
+  list-style: none;
+}
+
+.navbar-link {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .2rem;
+}
+
 /* Larger than phone */
 @media (min-width: 550px) {
   .header {
@@ -218,17 +233,12 @@ a:hover {
     width: 100%;
     }
   .navbar-list {
-    list-style: none;
     margin-bottom: 0; }
   .navbar-item {
     position: relative;
     float: left;
     margin-bottom: 0; }
   .navbar-link {
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .2rem;
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;

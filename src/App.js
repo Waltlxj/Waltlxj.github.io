@@ -26,7 +26,7 @@ const Content = () => {
       <nav className='navbar'>
           <ul className="navbar-list">
             <li className="navbar-item"><Link className="navbar-link" to='/'>About me</Link></li>
-            <li className="navbar-item"><Link className="navbar-link" to='/projects'>Projects</Link></li>
+            <li className="navbar-item"><Link className="navbar-link" to='/projects'>Programming Projects</Link></li>
             <li className="navbar-item"><Link className="navbar-link" to='/psyc'>Psychology research</Link></li>
             <li className="navbar-item"><Link className="navbar-link" to='/photos'>Photography</Link></li>
           </ul>

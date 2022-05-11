@@ -11,15 +11,30 @@ const Photos = () => {
     return (
         <div className='docs-section' data-theme='dark'>
             <h6 className='docs-header'>Photos</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae sodales ex. In in ornare leo, vitae dapibus mauris. Donec posuere volutpat nulla eu mollis. Phasellus tempor, diam ut vulputate congue, orci massa sollicitudin est, non semper lorem nulla ac libero. Donec fermentum tellus ut nunc dapibus pulvinar. Fusce luctus nunc vitae neque mollis scelerisque. Vivamus et libero varius, faucibus eros quis, rutrum urna. Nulla urna tellus, convallis vitae elit quis, pretium dictum tellus. Etiam consectetur euismod lectus at tincidunt. Cras nec molestie libero. In blandit diam consectetur libero egestas sagittis. Mauris blandit molestie mauris eu tristique. Duis a enim eget enim tincidunt cursus. Nunc sem diam, blandit nec dignissim vitae, consequat id mauris.
-
-Aliquam dignissim urna arcu, et consectetur ante dictum ullamcorper. Nulla ante nulla, semper vitae erat pellentesque, eleifend ultricies lorem. Quisque mattis diam sit amet dapibus auctor. In in tellus eget est ullamcorper tincidunt. Nullam semper, dolor vitae condimentum imperdiet, nunc ante rhoncus libero, ut pharetra tortor ante vel orci. Donec lacus enim, ornare sed nisl at, tempus lobortis nibh. Cras sit amet purus vel dui sollicitudin scelerisque. Aliquam erat volutpat. Fusce rutrum sit amet purus eu facilisis. Morbi nibh felis, dictum sed nibh nec, congue eleifend purus.
-
-Suspendisse interdum dui laoreet lorem efficitur, tincidunt pulvinar libero eleifend. In congue ullamcorper nulla ornare aliquam. Aliquam id arcu lectus. Praesent facilisis lectus ut risus blandit, non efficitur nulla congue. Mauris nec sollicitudin mauris. Nam fringilla elementum felis, sit amet faucibus felis finibus id. In dapibus felis sed lectus commodo suscipit. Ut vitae placerat enim, sit amet faucibus libero. Praesent condimentum, turpis luctus auctor condimentum, dolor neque pharetra dui, nec pellentesque nisi felis sit amet nulla. Nulla facilisi. Etiam ac lectus quis turpis efficitur pulvinar dapibus a mi. Nam vulputate nulla arcu, elementum congue sapien faucibus non.
-
-Donec a lectus sollicitudin, finibus dolor nec, vehicula ipsum. Cras tristique pharetra tortor, vitae lacinia risus tempus quis. Vestibulum ac enim convallis, cursus tortor non, ornare tellus. Integer at vulputate tellus, a commodo leo. Vestibulum pharetra sem ut molestie fringilla. Integer eget porttitor lacus. Fusce sit amet lorem lectus. Nunc id dignissim mi. Nam iaculis sed augue in ullamcorper. In at dictum est, eget rhoncus dolor. Ut arcu nunc, luctus vitae laoreet nec, tempus et felis. Pellentesque leo dui, efficitur a porta ut, blandit vitae lorem. Vestibulum fermentum tempus dui, id maximus sapien mattis eu. Nullam arcu risus, sagittis eget tortor id, congue maximus purus.
-
-Morbi condimentum ipsum id euismod sodales. Donec consectetur sapien consectetur nisi tempus, ac tempus tortor tempor. Aliquam aliquet tellus sit amet eros feugiat imperdiet quis nec lectus. Nunc porttitor ante ac turpis tincidunt volutpat. Pellentesque mattis risus odio, sed auctor ex viverra in. Quisque commodo elit vitae lectus sollicitudin dapibus. Morbi lacinia leo lorem. Duis sit amet libero sed felis efficitur sollicitudin eget et erat.</p>
+            <a data-flickr-embed="true" href="https://www.flickr.com/photos/192637096@N03/52022245873/in/datetaken-public/" title="DSC06244-1">
+                <img className="photo" src="https://live.staticflickr.com/65535/52022245873_39c97d6618_b.jpg" alt="Sunset"/>
+            </a>
+            <a data-flickr-embed="true" href="https://www.flickr.com/photos/192637096@N03/52066600443/in/datetaken-public/" title="DSC07992_01">
+                <img className="photo" src="https://live.staticflickr.com/65535/52066600443_1deb28139a_b.jpg" alt="McKnight Prairie" />
+            </a>
+            <a data-flickr-embed="true" href="https://www.flickr.com/photos/192637096@N03/52066923458/in/datetaken/" title="DSC07990 3.16.52 PM">
+                <img className="photo" src="https://live.staticflickr.com/65535/52066923458_4868a22ba9_b.jpg" alt="Northfield"/>
+            </a>
+            <a data-flickr-embed="true" href="https://www.flickr.com/photos/192637096@N03/52025782195/in/datetaken-public/" title="DSC07669">
+                <img className="photo" src="https://live.staticflickr.com/65535/52025782195_81148f125d_b.jpg" alt="Fox squirrel"/>
+            </a>
+            <a data-flickr-embed="true" href="https://www.flickr.com/photos/192637096@N03/52021171227/in/datetaken-public/" title="DSC06546-1">
+                <img className="photo" src="https://live.staticflickr.com/65535/52021171227_0bd109a6b6_b.jpg" alt="Fern"/>
+            </a>
+            <a data-flickr-embed="true" href="https://www.flickr.com/photos/192637096@N03/52022726185/in/datetaken-public/" title="DSC06531-1">
+                <img className="photo" src="https://live.staticflickr.com/65535/52022726185_e681ff27f3_b.jpg" alt="Jungle"/>
+            </a>
+            <a data-flickr-embed="true" href="https://www.flickr.com/photos/192637096@N03/52022197991/in/datetaken-public/" title="DSC03895-1">
+                <img className="photo" src="https://live.staticflickr.com/65535/52022197991_f6ae36ab68_b.jpg" alt="Ruins"/>
+            </a>
+            <a data-flickr-embed="true" href="https://www.flickr.com/photos/192637096@N03/52022715970/in/datetaken-public/" title="DSC03061">
+                <img className="photo" src="https://live.staticflickr.com/65535/52022715970_3942963f49_b.jpg" alt="Agave"/>
+            </a>
         </div>
     )
 }

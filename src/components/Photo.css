@@ -2,3 +2,9 @@
     color: white;
     background-color: black;
 } */
+
+.photo {
+    padding: 2rem 0 16rem 0;
+    width: 100%;
+    cursor: default;
+}
