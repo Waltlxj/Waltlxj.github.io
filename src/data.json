@@ -83,8 +83,78 @@
     }
   ],
   "projects": [
-    { "title": "", "description": "" },
-    { "title": "", "description": "" }
+    {
+      "title": "This Personal Website",
+      "description": [
+        "This simplistic responsive website with animaitons is built with React",
+        "Starting style is borrowed from Skeleton CSS"
+      ],
+      "tags": ["Frontend", "ReactJS", "CSS"],
+      "link": "https://github.com/Waltlxj/Waltlxj.github.io"
+    },
+    {
+      "title": "Famous Artists - Full Stack Web Application",
+      "description": [
+        "A full-stack web development project using plain HMTL/CSS/Javascript, Flask, and PostgreSQL",
+        "The website showcases 50 artists in the world and we can search for specfic artists based on a few criteria such as genre, birth year, etc."
+      ],
+      "tags": ["HTML", "CSS", "Flask", "PostgreSQL"],
+      "link": "https://github.com/Waltlxj/Famous-Artists"
+    },
+    {
+      "title": "Notes Pad - Full Stack Web Application",
+      "description": [
+        "A web development pratice project using technologies including React and Redux for front-end, Express for backend, and MongoDB as database"
+      ],
+      "tags": [
+        "Full Stack",
+        "ReactJS",
+        "ReduxJS",
+        "ExpressJS",
+        "NodeJS",
+        "MongoDB"
+      ],
+      "link": "https://github.com/Waltlxj/notes-pad"
+    },
+    {
+      "title": "Concurrent Caching Proxy Server",
+      "description": [
+        "A HTTP proxy server program written in C",
+        "The proxy caches web objects in memory following an LRU policy and responds to repeated requests with cached data",
+        "The proxy program uses threads to handle concurrent connections and requests."
+      ],
+      "tags": ["C", "Concurrent Programming"],
+      "link": "https://github.com/Waltlxj/concurrent-caching-proxy-server"
+    },
+
+    {
+      "title": "Scheme Interpreter",
+      "description": [
+        "Interpreter written in C for the language Scheme",
+        "Major features of Scheme are implemented",
+        "Implemented a LR parser and simple garbage collection"
+      ],
+      "tags": ["Scheme", "C", "Interpreter"],
+      "link": "https://github.com/Waltlxj/scheme-interpreter"
+    },
+    {
+      "title": "Moodle Plug-ins - Web Application",
+      "description": [
+        "Developed two plug-ins written in PHP for the course management system Moodle",
+        "One plug-in can analyze students' language quizzes results and provide detailed feedback and sub-scores based on different question categories (grammar, vocabulary, etc.)",
+        "The other can extract test grades into a result table in specific style for other offices to read from"
+      ],
+      "tags": ["PHP", "Web development"],
+      "link": "https://github.com/Waltlxj/language-dashboard"
+    },
+    {
+      "title": "Feed the Bird",
+      "description": [
+        "A simple throw-and-hit animated game that follows Object Oriented Design and is written in Python using a rudimentary graphics library"
+      ],
+      "tags": ["Python", "OOD"],
+      "link": "https://github.com/Waltlxj/feed-the-bird"
+    }
   ],
   "psych": {
     "introduction": "I like studying and thinking about psychology, particularly social and cultural psychology. The study of psychology has shown me how to fairly and critically examine ideas and thoughts, and it has helped me find ways to understand myself and to position myself in the world.",

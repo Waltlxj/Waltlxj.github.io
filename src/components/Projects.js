@@ -1,4 +1,14 @@
 import React from 'react'
+import data from '../data.json'
+
+const Project = ({info}) => {
+    return (
+        <div style={{paddingTop: "1rem", paddingBottom: "1rem", borderBottom: "1px solid #eee"}}>
+            <a href={info.link} target="blank"><h6 className='example-header'>{info.title}</h6></a>
+            <ul>{info.description.map(para => <li>{para}</li>)}</ul>
+        </div>
+    )
+}
 
 const Projects = () => {
     React.useEffect(() => {
@@ -7,9 +17,7 @@ const Projects = () => {
     return (
         <div className='docs-section'>
             <h6 className='docs-header'>Programming Projects</h6>
-            <div className='icon-list'>
-			    <a className='icon' href="https://github.com/Waltlxj" target="blank"><i className='fa-brands fa-github fa-lg'></i></a>
-            </div>
+            {data.projects.map(p => <Project info={p}/>)}
         </div>
     )
 }
