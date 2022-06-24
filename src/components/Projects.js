@@ -1,5 +1,31 @@
 import React from "react";
 
+const Tag = ({ tag }) => {
+  return (
+    <div
+      style={{
+        border: "solid 1px gray",
+        borderRadius: "2px",
+        fontSize: "1rem",
+        margin: "0 0.8rem 0.8rem 0",
+        padding: "0 0.5rem 0 0.5rem",
+      }}
+    >
+      {tag}
+    </div>
+  );
+};
+
+const TagCollection = ({ tags }) => {
+  return (
+    <div style={{ display: "flex", flexWrap: "wrap" }}>
+      {tags.map((tag, index) => (
+        <Tag tag={tag} key={index} />
+      ))}
+    </div>
+  );
+};
+
 const Project = ({ info }) => {
   return (
     <div
@@ -17,6 +43,7 @@ const Project = ({ info }) => {
           <li key={index}>{para}</li>
         ))}
       </ul>
+      <TagCollection tags={info.tags} />
     </div>
   );
 };
