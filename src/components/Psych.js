@@ -1,6 +1,5 @@
 import React from "react";
 import poster from "../assets/COVID_PT_Poster_4.0.jpg";
-import data from "../data.json";
 
 const Poster = () => {
   const [expanded, setExpanded] = React.useState(false);
@@ -34,23 +33,23 @@ const Poster = () => {
   );
 };
 
-const Psychology = () => {
+const Psychology = ({ psychData }) => {
   React.useEffect(() => {
     window.scroll({ top: 0, behavior: "smooth" });
   }, []);
   return (
     <div className="docs-section">
       <h6 className="docs-header">Psychology</h6>
-      <p>{data.psych.introduction}</p>
+      <p>{psychData.introduction}</p>
       <br />
 
       <h6 className="docs-header">Research</h6>
-      <h6 className="example-header">{data.psych.research[0].title}</h6>
-      <p>{data.psych.research[0].description}</p>
+      <h6 className="example-header">{psychData.research[0].title}</h6>
+      <p>{psychData.research[0].description}</p>
       <Poster />
       <br />
 
-      <h6 className="example-header">{data.psych.research[1].title}</h6>
+      <h6 className="example-header">{psychData.research[1].title}</h6>
       <p>
         {" "}
         I had always heard about the intrinsicality and cross-cultural

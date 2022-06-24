@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,15 +11,32 @@ import Intro from "./components/Intro";
 import Photos from "./components/Photo";
 import Projects from "./components/Projects";
 import Psychology from "./components/Psych";
+import dataService from "./services/data";
 
 import "./App.css";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const Content = () => {
+  const [data, setData] = useState({});
+  const [loading, setLoading] = useState(true);
   const location = useLocation();
   // console.log(location.pathname)
   const theme = location.pathname === "/photos" ? "dark" : "light";
   // console.log(theme)
+
+  // fetch data
+  useEffect(() => {
+    dataService.getData().then((responseData) => {
+      // console.log(responseData);
+      setData(responseData);
+      setLoading(false);
+    });
+  }, []);
+
+  if (loading) {
+    return <div></div>;
+  }
+
   return (
     <div className="page" data-theme={theme}>
       <div className="container">
@@ -69,10 +86,19 @@ const Content = () => {
             timeout={500}
           >
             <Routes location={location}>
-              <Route path="/" element={<Intro />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/psyc" element={<Psychology />} />
-              <Route path="/photos" element={<Photos />} />
+              <Route path="/" element={<Intro introData={data.intro} />} />
+              <Route
+                path="/projects"
+                element={<Projects projectsData={data.projects} />}
+              />
+              <Route
+                path="/psyc"
+                element={<Psychology psychData={data.psych} />}
+              />
+              <Route
+                path="/photos"
+                element={<Photos photosData={data.photos} />}
+              />
             </Routes>
           </CSSTransition>
         </TransitionGroup>

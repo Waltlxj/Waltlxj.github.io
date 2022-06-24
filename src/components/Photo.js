@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
-import data from "../data.json";
 
-const Photos = () => {
+const Photos = ({ photosData }) => {
   const titleRef = useRef();
 
   React.useEffect(() => {
@@ -19,7 +18,7 @@ const Photos = () => {
   return (
     <div ref={titleRef} className="docs-section" data-theme="dark">
       <h6 className="docs-header">Photos</h6>
-      {data.photos.map((p, index) => (
+      {photosData.map((p, index) => (
         <a data-flickr-embed="true" href={p.ref} title={p.title} key={index}>
           <img
             className="photo"

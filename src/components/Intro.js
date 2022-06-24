@@ -1,11 +1,8 @@
 import React from "react";
 import "./Intro.css";
-import data from "../data.json";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
-const hobbies = data.intro.hobbies;
-
-const Intro = () => {
+const Intro = ({ introData }) => {
   const [index, setIndex] = React.useState(0);
   const changeHobby = () => {
     setIndex(index + 1);
@@ -15,12 +12,15 @@ const Intro = () => {
 
   React.useEffect(() => {
     window.scroll({ top: 0, behavior: "smooth" });
+    // console.log(introData);
   }, []);
+
+  const hobbies = introData.hobbies;
 
   return (
     <div className="docs-section">
       <h6 className="docs-header">About me</h6>
-      <p> {data.intro.introduction} </p>
+      <p> {introData.introduction} </p>
       <p>
         {" "}
         I like
@@ -38,7 +38,7 @@ const Intro = () => {
       </p>
 
       <div className="icon-list" style={{ paddingTop: "3rem" }}>
-        {data.intro.links.map((link, index) => (
+        {introData.links.map((link, index) => (
           <a className="icon" href={link.url} target="blank" key={index}>
             <i className={`${link.className} fa-lg`}></i>
           </a>
