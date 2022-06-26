@@ -23,6 +23,11 @@ const Content = () => {
   // console.log(location.pathname)
   const theme = location.pathname === "/photos" ? "dark" : "light";
   // console.log(theme)
+  if (theme === "dark") {
+    document.body.style = "background: black;";
+  } else {
+    document.body.style = "background: white;";
+  }
 
   // fetch data
   useEffect(() => {

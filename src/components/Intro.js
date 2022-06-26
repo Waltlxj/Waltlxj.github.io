@@ -2,6 +2,18 @@ import React from "react";
 import "./Intro.css";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
+const Icons = ({ icons }) => {
+  return (
+    <div className="icon-list" style={{ paddingTop: "3rem" }}>
+      {icons.map((link, index) => (
+        <a className="icon" href={link.url} target="blank" key={index}>
+          <i className={`${link.className} fa-lg`}></i>
+        </a>
+      ))}
+    </div>
+  );
+};
+
 const Intro = ({ introData }) => {
   const [index, setIndex] = React.useState(0);
   const changeHobby = () => {
@@ -36,14 +48,7 @@ const Intro = ({ introData }) => {
           </CSSTransition>
         </SwitchTransition>
       </p>
-
-      <div className="icon-list" style={{ paddingTop: "3rem" }}>
-        {introData.links.map((link, index) => (
-          <a className="icon" href={link.url} target="blank" key={index}>
-            <i className={`${link.className} fa-lg`}></i>
-          </a>
-        ))}
-      </div>
+      <Icons icons={introData.links} />
     </div>
   );
 };
