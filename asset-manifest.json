@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.7cc11521.css",
-    "main.js": "/static/js/main.665d1240.js",
+    "main.js": "/static/js/main.8d070265.js",
     "static/media/COVID_PT_Poster_4.0.jpg": "/static/media/COVID_PT_Poster_4.0.7d8c30e57a6ab04d7ec7.jpg",
     "index.html": "/index.html",
     "main.7cc11521.css.map": "/static/css/main.7cc11521.css.map",
-    "main.665d1240.js.map": "/static/js/main.665d1240.js.map"
+    "main.8d070265.js.map": "/static/js/main.8d070265.js.map"
   },
   "entrypoints": [
     "static/css/main.7cc11521.css",
-    "static/js/main.665d1240.js"
+    "static/js/main.8d070265.js"
   ]
 }
