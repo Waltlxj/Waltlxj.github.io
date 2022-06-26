@@ -16,6 +16,8 @@ import dataService from "./services/data";
 import "./App.css";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
+import { shuffle } from "./utils/shuffle";
+
 const Content = () => {
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
@@ -33,6 +35,7 @@ const Content = () => {
   useEffect(() => {
     dataService.getData().then((responseData) => {
       // console.log(responseData);
+      responseData.photos = shuffle(responseData.photos);
       setData(responseData);
       setLoading(false);
     });
