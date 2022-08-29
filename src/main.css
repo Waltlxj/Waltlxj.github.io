@@ -32,7 +32,7 @@ body {
   min-height: 100%;
   margin: 0;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   font-weight: 400;
   transition: background-color 500ms;
 }
@@ -73,7 +73,7 @@ h3 {
 
 h4 {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.75;
   letter-spacing: 0.05rem;
   font-weight: 500;
 }
@@ -286,9 +286,6 @@ nav {
 .footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.icon-list {
   text-align: center;
 }
 
@@ -302,6 +299,12 @@ nav {
 
 .icon:hover {
   color: var(--accent-secondary);
+}
+
+.copyright {
+  margin-top: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
 }
 
 .gallery {
@@ -322,6 +325,7 @@ p a:hover {
 @media (min-width: 550px) {
   .header {
     padding-top: 10rem;
+    padding-bottom: 3rem;
   }
 }
 
