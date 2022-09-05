@@ -35,7 +35,7 @@ const Poster = () => {
   );
 };
 
-const Psychology = ({ data }) => {
+export const Psychology = ({ data }) => {
   const titleRef = useRef();
 
   React.useEffect(() => {
@@ -106,5 +106,3 @@ const Psychology = ({ data }) => {
     </PageMotionWrapper>
   );
 };
-
-export default Psychology;

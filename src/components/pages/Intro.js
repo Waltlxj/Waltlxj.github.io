@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import Footer from "../Footer";
 
-const Intro = ({ data }) => {
+export const Intro = ({ data }) => {
   const [index, setIndex] = React.useState(0);
   const changeHobby = () => {
     setIndex(index + 1);
@@ -50,5 +50,3 @@ const Hobby = ({ text }) => {
     </motion.span>
   );
 };
-
-export default Intro;

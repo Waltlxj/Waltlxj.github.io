@@ -2,7 +2,7 @@
   --background: white;
   --background-secondary: #eee;
   --text-primary: #222;
-  --text-secondary: #999;
+  --text-secondary: #bbb;
   --border: #eee;
   --accent: black;
   --accent-secondary: rgb(120, 211, 120);
@@ -34,7 +34,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  transition: background-color 500ms;
 }
 
 .page {
@@ -58,6 +57,9 @@ h6 {
 h1 {
   font-size: 2rem;
   line-height: 1.2;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
 }
 
 h2 {
@@ -68,7 +70,6 @@ h2 {
 h3 {
   font-size: 1rem;
   line-height: 1.3;
-  letter-spacing: 0rem;
 }
 
 h4 {
@@ -183,7 +184,6 @@ a {
   background-color: transparent;
   text-decoration: none;
   color: var(--text-secondary);
-  transition: color 400ms;
 }
 
 a:active,
@@ -200,10 +200,15 @@ li {
   text-align: center;
 }
 
-.header {
-  padding-top: 7rem;
-  padding-bottom: 2rem;
+header {
+  height: 12rem;
   text-align: center;
+  position: relative;
+  /* font-family: Verdana, sans-serif; */
+}
+
+.title {
+  padding-top: 7rem;
 }
 
 .docs-header {
@@ -225,7 +230,6 @@ li {
   margin-bottom: 0.5rem;
   color: var(--text-primary);
   border-radius: 0.5rem;
-  transition: background-color 500ms ease-in-out;
 }
 
 .example-block:hover {
@@ -242,7 +246,6 @@ nav {
   position: sticky;
   top: 0;
   background-color: var(--background);
-  transition: background-color 500ms;
 }
 
 .navbar {
@@ -323,9 +326,11 @@ p a:hover {
 
 /* Larger than phone */
 @media (min-width: 550px) {
-  .header {
+  header {
+    height: 16rem;
+  }
+  .title {
     padding-top: 10rem;
-    padding-bottom: 3rem;
   }
 }
 

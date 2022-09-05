@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-
-import Intro from "./components/pages/Intro";
-import Photos from "./components/pages/Photo";
-import Projects from "./components/pages/Projects";
-import Psychology from "./components/pages/Psych";
-
+import { Intro, Photography, Psychology, Projects } from "./components/pages";
 import dataService from "./services/data";
-
 import { shuffle } from "./utils/shuffle";
-
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 
@@ -36,21 +29,19 @@ const Content = () => {
     });
   }, []);
 
-  if (loading) {
-    return <div></div>;
-  }
-
   return (
     <div className="page" data-theme={theme}>
       <div className="container">
         <Header />
         <NavBar />
-        <Routes location={location}>
-          <Route path="/" element={<Intro data={data} />} />
-          <Route path="/projects" element={<Projects data={data} />} />
-          <Route path="/psyc" element={<Psychology data={data} />} />
-          <Route path="/photos" element={<Photos data={data} />} />
-        </Routes>
+        {!loading && (
+          <Routes location={location}>
+            <Route path="/" element={<Intro data={data} />} />
+            <Route path="/projects" element={<Projects data={data} />} />
+            <Route path="/psyc" element={<Psychology data={data} />} />
+            <Route path="/photos" element={<Photography data={data} />} />
+          </Routes>
+        )}
       </div>
     </div>
   );

@@ -1,0 +1,104 @@
+.canvas {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 168px;
+  height: 168px;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+.center {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.candle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.candle-wick {
+  height: 10px;
+  width: 3px;
+  background: #ad87a9;
+}
+.candle-wax {
+  width: 32px;
+  height: 88px;
+  background: #eee;
+  border-radius: 6px;
+  /* border-top-right-radius: 20px; */
+  box-shadow: inset -15px 0px 0px -8px #ddd;
+}
+
+.fire {
+  position: relative;
+  height: 20px;
+  transform-origin: bottom;
+  animation-name: flicker;
+  animation-duration: 1000ms;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.flame {
+  bottom: 0;
+  position: absolute;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  transform: rotate(-45deg) scale(1.5, 1.5);
+  transform-origin: bottom;
+}
+
+.red {
+  width: 16px;
+  height: 16px;
+  background: OrangeRed;
+  box-shadow: 0px 0px 16px 0px gold;
+}
+
+.orange {
+  width: 13px;
+  height: 13px;
+  background: orange;
+}
+
+.yellow {
+  width: 10px;
+  height: 10px;
+  background: gold;
+}
+
+.white {
+  bottom: -1px;
+  width: 8px;
+  height: 8px;
+  background: rgb(255, 253, 196);
+}
+
+@keyframes flicker {
+  0% {
+    transform: rotate(-2deg);
+  }
+  20% {
+    transform: rotate(1deg);
+  }
+  40% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(2deg) scaleY(1.04);
+  }
+  80% {
+    transform: rotate(-2deg) scaleY(0.92);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}

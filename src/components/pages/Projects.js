@@ -45,7 +45,7 @@ const Project = ({ info }) => {
   );
 };
 
-const Projects = ({ data }) => {
+export const Projects = ({ data }) => {
   const titleRef = useRef();
 
   React.useEffect(() => {
@@ -68,5 +68,3 @@ const Projects = ({ data }) => {
     </PageMotionWrapper>
   );
 };
-
-export default Projects;

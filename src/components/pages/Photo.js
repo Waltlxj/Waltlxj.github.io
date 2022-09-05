@@ -4,7 +4,7 @@ import Footer from "../Footer";
 
 import { motion } from "framer-motion";
 
-const Photos = ({ data }) => {
+export const Photos = ({ data }) => {
   const titleRef = useRef();
 
   React.useEffect(() => {
@@ -45,5 +45,3 @@ const Photos = ({ data }) => {
     </PageMotionWrapper>
   );
 };
-
-export default Photos;
